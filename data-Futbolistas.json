@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Lionel",
+    "lastName": "Messi",
+    "birthDate": "1987-06-24",
+    "characteristics": "Uno de los mejores futbolistas de todos los tiempos.",
+    "positionsDTO": [
+      {"name": "Delantero"},
+      {"name": "Extremo"}
+    ]
+  },
+  {
+    "name": "Cristiano",
+    "lastName": "Ronaldo",
+    "birthDate": "1985-02-05",
+    "characteristics": "Un delantero polivalente con un atletismo increíble",
+    "positionsDTO": [
+      {"name": "Delantero"},
+      {"name": "Mediapunta"}
+    ]
+  },
+  {
+    "name": "Neymar",
+    "lastName": "Jr.",
+    "birthDate": "1992-02-05",
+    "characteristics": "Una delantera hábil y creativa.",
+    "positionsDTO": [
+      {"name": "Delantero"},
+      {"name": "Extremo"}
+    ]
+  },
+  {
+    "name": "Luis",
+    "lastName": "Suárez",
+    "birthDate": "1987-01-24",
+    "characteristics": "Un finalizador clínico y un goleador experto.",
+    "positionsDTO": [
+      {"name": "Delantero"},
+      {"name": "Segundo Delantero"}
+    ]
+  },
+  {
+    "name": "Kylian",
+    "lastName": "Mbappé",
+    "birthDate": "1998-12-20",
+    "characteristics": "Un delantero veloz con excepcionales habilidades de regate",
+    "positionsDTO": [
+      {"name": "Delantero"},
+      {"name": "Extremo"}
+    ]
+  },
+  {
+    "name": "Robert",
+    "lastName": "Lewandowski",
+    "birthDate": "1988-08-21",
+    "characteristics": "Un delantero increíblemente prolífico con un posicionamiento excepcional",
+    "positionsDTO": [
+      {"name": "Delantero"},
+      {"name": "9 Puro"}
+    ]
+  },
+  {
+    "name": "Harry",
+    "lastName": "Kane",
+    "birthDate": "1993-07-28",
+    "characteristics": "Un rematador clínico con buen ojo para el gol.",
+    "positionsDTO": [
+      {"name": "Delantero"},
+      {"name": "Segundo Delantero"}
+    ]
+  },
+  {
+    "name": "Sergio",
+    "lastName": "Agüero",
+    "birthDate": "1988-06-02",
+    "characteristics": "Un delantero letal conocido por su agilidad y su capacidad goleadora.",
+    "positionsDTO": [
+      {"name": "Delantero"},
+      {"name": "9 Puro"}
+    ]
+  }
+]
