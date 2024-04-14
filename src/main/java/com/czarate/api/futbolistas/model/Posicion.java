@@ -34,9 +34,15 @@ public class Posicion {
 	private List<Futbolista> footballPlayers;
 	
 	public Posicion(PosicionDTO posicionDTO) {
-		this.id = posicionDTO.getId();
 		this.name=posicionDTO.getName();
 	}
 	
+	@Override
+    public String toString() {
+        return "Posicion{" +
+                "id=" + id +
+                ", nombre='" + name + '\'' +
+                '}';
+    }
 
 }

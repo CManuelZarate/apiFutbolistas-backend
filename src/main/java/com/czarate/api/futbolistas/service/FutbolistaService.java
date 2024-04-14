@@ -9,15 +9,20 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import com.czarate.api.futbolistas.dto.FutbolistaDTO;
+import com.czarate.api.futbolistas.dto.PosicionDTO;
 import com.czarate.api.futbolistas.model.Futbolista;
 import com.czarate.api.futbolistas.model.Posicion;
 import com.czarate.api.futbolistas.repository.IFutbolistaRepository;
+import com.czarate.api.futbolistas.repository.IPosicionRepository;
 
 @Service
 public class FutbolistaService implements IFutbolistaService {
 	
 	@Autowired
 	private IFutbolistaRepository futbolistaRepository; 
+	
+	@Autowired
+	private IPosicionRepository posicionRepository;
 
 	@Override
 	public Page<Futbolista> findAll(int page,int size) {
@@ -35,9 +40,11 @@ public class FutbolistaService implements IFutbolistaService {
 	public Futbolista save(FutbolistaDTO futbolistaDTO) {
 		
 		List<Posicion> lp =  new ArrayList<>();
-		for(int i=0;i<futbolistaDTO.getPositionsDTO().size();i++) {
-			lp.add(new Posicion(futbolistaDTO.getPositionsDTO().get(i))) ;
-		}
+		 for (PosicionDTO posicionDTO : futbolistaDTO.getPositionsDTO()) {
+		   Posicion posicion = posicionRepository.findByName(posicionDTO.getName())
+		            .orElse(new Posicion(posicionDTO));
+		   lp.add(posicion);
+		    }
 		
 		Futbolista f = new Futbolista(futbolistaDTO,lp);
 		

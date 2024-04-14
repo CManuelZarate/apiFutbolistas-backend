@@ -66,6 +66,17 @@ public class Futbolista implements Serializable {
 		this.positions = lp;
 	}
 	
+	 @Override
+	    public String toString() {
+	        return "Futbolista{" +
+	                "nombre='" + this.name + '\'' +
+	                ", apellido='" + this.lastName + '\'' +
+	                ", fechaDeNacimiento=" + this.birthDate +
+	                ", caracteristicas='" + this.characteristics + '\'' +
+	                ", posiciones=" + this.positions + // Suponiendo que posiciones es una lista o conjunto
+	                '}';
+	    }
+	
 
 	private static final long serialVersionUID = 1L;
 	

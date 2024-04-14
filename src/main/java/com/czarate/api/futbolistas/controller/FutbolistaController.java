@@ -68,10 +68,6 @@ public class FutbolistaController {
 		        return ResponseEntity.unprocessableEntity().body("Error campos no validos");
 			 }
 			Futbolista player = futbolistaService.save(futbolistaDTO);
-			if(result.hasErrors()) {
-				log.info("Error campos no validos");
-				return ResponseEntity.unprocessableEntity().build();
-			}
 			log.info("Jugador creado");
 			return ResponseEntity.status(HttpStatus.CREATED).body(player);
 		}
